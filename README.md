@@ -27,3 +27,13 @@ end)
 ScriptSection:NewButton("Inf Jump", "giveu infinite jumps leave and rejoin for no inf jump", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/xrobloxscriptsx/infjump/main/README.md'))()
 end)
+
+
+ScriptSection:NewButton("Kill aura", "kills anyone that is near you", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/xrobloxscriptsx/killaura/main/README.md'
+end)
+
+
+ScriptSection:NewButton("Owl Hub", "just owl hub?", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt%22))();
+end)
