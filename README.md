@@ -35,5 +35,5 @@ end)
 
 
 ScriptSection:NewButton("Owl Hub", "just owl hub?", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt%22))();
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
 end)
