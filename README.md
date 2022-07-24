@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Xeon Client", "BloodTheme")
+local Window = Library.CreateLib("DragonWare - steal others time & flex your sword", "BloodTheme")
 
 --MAIN
 local Scripts = Window:NewTab("Scripts")
@@ -31,4 +31,55 @@ end)
 
 ScriptSection:NewButton("Owl Hub", "just owl hub?", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+
+
+ScriptSection:NewToggle("Super Sonic", "super speed", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+    else
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    end
+end)
+
+
+ScriptSection:NewToggle("Super Human", "sonic and JumpPower", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 70
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 135
+    else
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    end
+end)
+
+ScriptSection:NewToggle("slow sonic", "50 speed power", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
+    else
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    end
+end)
+
+
+--COMBAT
+
+
+local Combat = Window:NewTab("Combat")
+local CombatSection = Combat:NewSection("Manual")
+
+
+CombatSection:NewButton("Reach", "reech", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/xrobloxscriptsx/reach/main/README.md'))()
+end)
+
+
+CombatSection:NewTextBox("MORE THINGS SOON", "soon", function(txt)
+	print(txt)
+end)
+
+
+
+CombatSection:NewButton("autofarm read desc ( ... )", "click c to teleport to a player", function()
+ 
 end)
