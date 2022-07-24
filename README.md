@@ -53,12 +53,9 @@ ScriptSection:NewToggle("Super Human", "sonic and JumpPower", function(state)
     end
 end)
 
-ScriptSection:NewToggle("slow sonic", "50 speed power", function(state)
-    if state then
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
-    else
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
-    end
+
+ScriptSection:NewKeybind("toggle speed", "when press c u get speed", Enum.KeyCode.C, function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
 end)
 
 
@@ -79,7 +76,9 @@ CombatSection:NewTextBox("MORE THINGS SOON", "soon", function(txt)
 end)
 
 
+local AutoSection = Auto:NewSection("AutoMatic")
 
-CombatSection:NewButton("autofarm read desc ( ... )", "click c to teleport to a player", function()
- 
+
+AutoMaticSection:NewButton("AutoFarm dont work", "Click C to teleport to player", function()
+   print(willy)
 end)
